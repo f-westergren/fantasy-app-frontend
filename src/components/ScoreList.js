@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ScoreCard from './ScoreCard';
 import Loading from './Loading';
 import axios from 'axios';
-import Grid from '@material-ui/core/grid';
+import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 const API_URL = process.env.REACT_APP_API_URL;
 

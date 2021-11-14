@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useHistory, Redirect } from 'react-router-dom';
-import Button from '@material-ui/core/button';
+import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
-import Grid from '@material-ui/core/grid';
+import Grid from '@material-ui/core/Grid';
 import { useAuth } from './context/auth';
 import getFromToken from '../utils';
 import axios from 'axios';
