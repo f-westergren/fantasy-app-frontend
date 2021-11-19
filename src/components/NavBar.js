@@ -6,7 +6,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import SportsFootballIcon from '@material-ui/icons/SportsFootball';
-import Button from '@material-ui/core/button';
+import Button from '@material-ui/core/Button';
 // import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import { useAuth } from './context/auth';
