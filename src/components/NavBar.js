@@ -6,8 +6,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import SportsFootballIcon from '@material-ui/icons/SportsFootball';
-import Button from '@material-ui/core/Button';
-import MenuItem from '@material-ui/core/MenuItem';
+import Button from '@material-ui/core/button';
+// import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import { useAuth } from './context/auth';
 import getFromToken from '../utils';
@@ -77,8 +77,7 @@ export default function MenuAppBar() {
 								open={open}
 								onClose={handleClose}
 							>
-								<MenuItem onClick={handleClose}>Current Week</MenuItem>
-								<MenuItem onClick={handleClose}>Week 7</MenuItem>
+								{/* <MenuItem onClick={handleClose}>Current Week</MenuItem> */}
 							</Menu>
 						</div>
 					
@@ -94,7 +93,12 @@ export default function MenuAppBar() {
 					</Button>
 					</>
 					)}
-					{!user && <Button color="inherit" href="/login">Login</Button>}
+					{!user && 
+						<div>
+							<Button color="inherit" href="/login">Login</Button>
+							<Button color="inherit" href="/signup">Sign up</Button>
+						</div>
+					}
 				</Toolbar>
 			</AppBar>
 		</div>
